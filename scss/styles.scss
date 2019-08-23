@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond|Josefin+Sans&display=swap');
+@import 'normalize';
+@import 'mixins';
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Cinzel', serif; */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 100%;
+}
+
+body {
+	font-family: 'Cinzel', serif;
+	font-size: 1.8rem;
+	color: #333;
+	min-height: 100%;
+    background-image: url('https://images.8tracks.com/cover/i/001/789/570/8d1dbcb8472c11e387f80e3973a68cf2_8-8021.jpg?rect=0,0,640,640&q=98&fm=jpg&fit=max');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ol{
+    @include myPos;
+    width: 40%;
+    background-color:#9b9e97;
+    border:5px solid #9b9e97;
+    opacity:0.8;
+    box-shadow: 25px 25px 200px 0px rgba(0,0,0,0.9);
+}
+
+li {
+    padding: 20px;
+    font-weight: 600;
+    background-color:#9b9e97;
+    color:#404652;
+    opacity:0.8;
+}
